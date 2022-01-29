@@ -13,33 +13,119 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;
   box-sizing: border-box; }
 
-.row {
-  max-width: 100%;
-  margin: 0 auto; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-  .row::after {
-    content: "";
-    display: table;
-    clear: both; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 3rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - 3rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - 2 * 3rem) / 3); }
-  .row .col-1-of-4 {
-    width: calc((100% - 3 * 3rem) / 4); }
-  .row .col-2-of-3 {
-    width: calc( 2 * ((100% - 2 * 3rem) / 3) + 3rem); }
-  .row .col-2-of-4 {
-    width: calc( 2 * ((100% - 3 * 3rem) / 4) + 3rem); }
-  .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
-  .row .col-3-of-4 {
-    width: calc( 3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); }
+.heading-h1 {
+  font-size: 8rem; }
+
+.heading-h4 {
+  font-size: 4rem; }
+
+.heading-h5 {
+  font-size: 2rem; }
+
+.margin__top--small {
+  margin-top: 2rem; }
+
+.margin__top--medium {
+  margin-top: 4rem; }
+
+.margin__top--big {
+  margin-top: 8rem; }
+
+.margin__top--large {
+  margin-top: 10rem; }
+
+.signup__btn--transparent {
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  border: 1px solid grey;
+  padding: 1rem 4rem;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 5rem; }
+
+.signup__btn--color {
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5rem;
+  font-weight: 700;
+  background-color: #1A8CD8;
+  transition: all .2s; }
+  .signup__btn--color:hover {
+    background-color: #177CC0; }
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr); }
+  .header__left {
+    background-color: #1A8CD8;
+    height: 100vh; }
+    .header__left .twitter__logo {
+      max-width: 50%;
+      margin: 0 auto;
+      transform: translateY(50%);
+      filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(7453%) hue-rotate(274deg) brightness(103%) contrast(109%);
+      display: block; }
+  .header__right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem; }
+    .header__right .twitter__logo--right {
+      width: 5rem;
+      height: 5rem;
+      transform: translateY(50%);
+      filter: brightness(0) saturate(100%) invert(45%) sepia(51%) saturate(778%) hue-rotate(157deg) brightness(94%) contrast(96%); }
+    .header__right .image__box {
+      display: inline; }
+    .header__right .signup__block {
+      display: block;
+      max-width: 35rem;
+      height: auto; }
+    .header__right .signup__google {
+      color: #3C4043;
+      transition: all 0.2s; }
+      .header__right .signup__google:hover {
+        background-color: #e6e6e6; }
+    .header__right .signup__apple {
+      color: black;
+      transition: all 0.2s; }
+      .header__right .signup__apple:hover {
+        background-color: #e6e6e6; }
+    .header__right .signup__text--small {
+      font-size: 1.2rem;
+      margin-top: 1rem; }
+    .header__right .signin__btn {
+      transition: all 0.2s;
+      color: #1A8CD8; }
+      .header__right .signin__btn:hover {
+        background-color: #d2ebfc; }
+    .header__right .span__imgbox {
+      display: inline-block;
+      transform: translateY(0.5rem); }
+    .header__right .signup__btn--image {
+      width: 2rem;
+      height: 2rem;
+      margin-right: .5rem; }
+    .header__right .signup__divider {
+      display: grid;
+      font-size: 1.6rem;
+      grid-template-columns: 1fr max-content 1fr;
+      grid-column-gap: 1.5rem;
+      align-items: center; }
+      .header__right .signup__divider::before, .header__right .signup__divider::after {
+        content: "";
+        height: 1px;
+        display: inline-block;
+        background-color: black; }
+    .header__right .login__block {
+      display: block;
+      max-width: 35rem;
+      height: auto; }

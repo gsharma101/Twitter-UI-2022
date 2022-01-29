@@ -1,0 +1,29 @@
+.signup__btn--transparent
+{
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid grey;
+    padding: 1rem 4rem;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5rem;
+}
+
+.signup__btn--color
+{
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5rem;
+    font-weight: 700;
+    background-color: $color-primary;
+    transition: all .2s;
+    &:hover{
+        background-color: #177CC0;
+    }
+}
