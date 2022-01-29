@@ -142,3 +142,6 @@ body {
       display: block;
       max-width: 35rem;
       height: auto; }
+      @media only screen and (max-width: 62.5em) {
+        .header__right .login__block {
+          margin-bottom: 4rem; } }
