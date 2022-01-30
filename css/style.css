@@ -33,8 +33,27 @@ body {
 .margin__top--big {
   margin-top: 8rem; }
 
-.margin__top--large {
+.margin__bottom--large {
   margin-top: 10rem; }
+
+.margin__bottom--small {
+  margin-bottom: 2rem; }
+
+.margin__bottom--medium {
+  margin-bottom: 4rem; }
+
+.margin__bottom--big {
+  margin-bottom: 8rem; }
+
+.margin__bottom--large {
+  margin-bottom: 10rem; }
+
+.center__content {
+  margin: 0 auto; }
+
+.btn {
+  border: none;
+  cursor: pointer; }
 
 .signup__btn--transparent {
   text-decoration: none;
@@ -125,7 +144,7 @@ body {
     .header__right .signup__btn--image {
       width: 2rem;
       height: 2rem;
-      margin-right: .5rem; }
+      margin-right: 0.5rem; }
     .header__right .signup__divider {
       display: grid;
       font-size: 1.6rem;
@@ -145,3 +164,29 @@ body {
       @media only screen and (max-width: 62.5em) {
         .header__right .login__block {
           margin-bottom: 4rem; } }
+
+.header__signup {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  align-items: center; }
+  .header__signup .signup__page--btn {
+    display: block;
+    width: 100%; }
+  .header__signup .signup__page--logo {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(51%) saturate(778%) hue-rotate(157deg) brightness(94%) contrast(96%); }
+  .header__signup--logo {
+    width: 4rem;
+    height: 4rem; }
+  .header__signup--form input {
+    display: block;
+    font-size: 1.6rem;
+    border-radius: .2rem;
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.555);
+    padding: 1.5rem 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    transition: all .5rem; }
+    .header__signup--form input:focus {
+      outline: 2px solid #1A8CD8; }

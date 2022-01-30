@@ -1,0 +1,4 @@
+@mixin default-color {
+    filter: brightness(0) saturate(100%) invert(45%) sepia(51%) saturate(778%)
+        hue-rotate(157deg) brightness(94%) contrast(96%);
+}

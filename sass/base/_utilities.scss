@@ -10,6 +10,26 @@
     margin-top: 8rem;
 }
 
-.margin__top--large{
+.margin__bottom--large{
     margin-top: 10rem;
+}
+
+.margin__bottom--small{
+    margin-bottom: 2rem;
+}
+
+.margin__bottom--medium{
+    margin-bottom: 4rem;
+}
+
+.margin__bottom--big{
+    margin-bottom: 8rem;
+}
+
+.margin__bottom--large{
+    margin-bottom: 10rem;
+}
+
+.center__content{
+    margin: 0 auto;
 }
