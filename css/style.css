@@ -165,6 +165,14 @@ body {
         .header__right .login__block {
           margin-bottom: 4rem; } }
 
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  font-size: 2rem;
+  margin: 0 auto; }
+  .layout__right--sidebar {
+    position: fixed; }
+
 .header__login {
   margin: 0 auto;
   max-width: 40rem;
