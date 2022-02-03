@@ -170,6 +170,16 @@ body {
   grid-template-columns: 1fr 2fr 1fr;
   font-size: 2rem;
   margin: 0 auto; }
+  .layout__left--sidebar {
+    position: fixed; }
+    .layout__left--sidebar .brand {
+      filter: brightness(0) saturate(100%) invert(45%) sepia(51%) saturate(778%) hue-rotate(157deg) brightness(94%) contrast(96%);
+      width: 4rem;
+      height: 4rem; }
+    .layout__left--sidebar .brand__box {
+      display: inline-block; }
+      .layout__left--sidebar .brand__box:hover {
+        background-color: #1A8CD8; }
   .layout__right--sidebar {
     position: fixed; }
 

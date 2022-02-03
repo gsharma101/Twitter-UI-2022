@@ -4,7 +4,18 @@
     font-size: 2rem;
     margin: 0 auto;
     &__left--sidebar{
-
+        position: fixed;
+        .brand{
+            @include default-color;
+            width: 4rem;
+            height: 4rem;
+        }
+        .brand__box{
+            display: inline-block;
+            &:hover{
+                background-color: $color-primary;
+            }
+        }
     }
     &__main--sidebar{
 
