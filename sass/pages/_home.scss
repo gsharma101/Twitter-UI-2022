@@ -18,7 +18,8 @@
         }
     }
     &__main--sidebar{
-
+        border-left: 1px solid red;
+        border-right: 1px solid red;
     }
     &__right--sidebar{
         position: fixed;

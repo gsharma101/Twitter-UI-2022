@@ -180,6 +180,9 @@ body {
       display: inline-block; }
       .layout__left--sidebar .brand__box:hover {
         background-color: #1A8CD8; }
+  .layout__main--sidebar {
+    border-left: 1px solid red;
+    border-right: 1px solid red; }
   .layout__right--sidebar {
     position: fixed; }
 
