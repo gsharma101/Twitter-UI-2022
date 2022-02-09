@@ -167,7 +167,7 @@ body {
 
 .layout {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1.3fr 2fr 1.3fr;
   font-size: 2rem;
   margin: 0 auto; }
   .layout__left--sidebar {
