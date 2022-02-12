@@ -60,6 +60,14 @@
     &__main--sidebar{
         border-left: 1px solid red;
         border-right: 1px solid red;
+        .tweet{
+            border: 1px solid blue;
+            &__user-logo{
+                border-radius: 50%;
+                width: 5rem;
+                height: 5rem;
+            }
+        }
     }
     &__right--sidebar{
         position: fixed;
