@@ -213,6 +213,12 @@ body {
   .layout__main--sidebar {
     border-left: 1px solid red;
     border-right: 1px solid red; }
+    .layout__main--sidebar .tweet {
+      border: 1px solid blue; }
+      .layout__main--sidebar .tweet__user-logo {
+        border-radius: 50%;
+        width: 5rem;
+        height: 5rem; }
   .layout__right--sidebar {
     position: fixed; }
 
