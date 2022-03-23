@@ -3,6 +3,7 @@
     grid-template-columns: 1.3fr 2fr 1.3fr;
     font-size: 2rem;
     margin: 0 auto;
+    max-width: 1200px;
     &__left--sidebar{
         position: fixed;
         .brand{
@@ -60,14 +61,6 @@
     &__main--sidebar{
         border-left: 1px solid red;
         border-right: 1px solid red;
-        .tweet{
-            border: 1px solid blue;
-            &__user-logo{
-                border-radius: 50%;
-                width: 5rem;
-                height: 5rem;
-            }
-        }
     }
     &__right--sidebar{
         position: fixed;
