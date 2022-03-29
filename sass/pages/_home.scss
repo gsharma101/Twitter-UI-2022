@@ -1,9 +1,10 @@
 .layout{
     display: grid;
     grid-template-columns: 1.3fr 2fr 1.3fr;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 120rem;
+    border: 1px solid red;
     &__left--sidebar{
         position: fixed;
         .brand{
@@ -64,5 +65,32 @@
     }
     &__right--sidebar{
         position: fixed;
+    }
+
+    .explorar{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    .tweet__creater{
+        display: flex; 
+    }
+    .tweet__options{
+        display: flex;
+        &--items{
+        }
+    }
+
+    #tweetArea{
+        font-size: 1.8rem;
+        font-weight: 500;
+        font-family: inherit;
+        resize: none;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        overflow-y: auto;
+        border: 1px solid orangered;
     }
 }

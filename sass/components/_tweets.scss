@@ -1,6 +1,7 @@
 .tweet{
     display: flex;
-    border: 1px solid blue;
+    border-top: 1px solid #14171a;
+    border-bottom: 1px solid #14171a;
     &__user-logo{
         border-radius: 50%;
         width: 5rem;
@@ -9,6 +10,7 @@
     }
     &__header{
         display: flex;
+        border: 1px solid blue;
     }
     &__person--name{
         font-size: 1.5rem;
@@ -34,8 +36,12 @@
     }
     // ? Tweet Actions
     &__actions{
+        .action__icon{
+            width: 2rem;
+            height: auto;
+        }
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         .comment{
 
         }
