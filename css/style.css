@@ -82,14 +82,16 @@ body {
 
 .tweet {
   display: flex;
-  border: 1px solid blue; }
+  border-top: 1px solid #14171a;
+  border-bottom: 1px solid #14171a; }
   .tweet__user-logo {
     border-radius: 50%;
     width: 5rem;
     height: 5rem;
     margin-right: 1rem; }
   .tweet__header {
-    display: flex; }
+    display: flex;
+    border: 1px solid blue; }
   .tweet__person--name {
     font-size: 1.5rem;
     font-weight: 700;
@@ -106,7 +108,10 @@ body {
     font-size: 1.5rem; }
   .tweet__actions {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around; }
+    .tweet__actions .action__icon {
+      width: 2rem;
+      height: auto; }
 
 .header {
   display: grid;
@@ -196,9 +201,10 @@ body {
 .layout {
   display: grid;
   grid-template-columns: 1.3fr 2fr 1.3fr;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0 auto;
-  max-width: 1200px; }
+  max-width: 120rem;
+  border: 1px solid red; }
   .layout__left--sidebar {
     position: fixed; }
     .layout__left--sidebar .brand {
@@ -244,6 +250,24 @@ body {
     border-right: 1px solid red; }
   .layout__right--sidebar {
     position: fixed; }
+  .layout .explorar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem; }
+  .layout .tweet__creater {
+    display: flex; }
+  .layout .tweet__options {
+    display: flex; }
+  .layout #tweetArea {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: inherit;
+    resize: none;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    overflow-y: auto;
+    border: 1px solid orangered; }
 
 .header__login {
   margin: 0 auto;
