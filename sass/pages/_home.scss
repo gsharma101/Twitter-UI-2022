@@ -70,27 +70,6 @@
     .explorar{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 1.5rem;
-    }
-
-    .tweet__creater{
-        display: flex; 
-    }
-    .tweet__options{
-        display: flex;
-        &--items{
-        }
-    }
-
-    #tweetArea{
-        font-size: 1.8rem;
-        font-weight: 500;
-        font-family: inherit;
-        resize: none;
         padding: 1rem;
-        border: none;
-        outline: none;
-        overflow-y: auto;
-        border: 1px solid orangered;
     }
 }

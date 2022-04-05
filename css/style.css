@@ -55,6 +55,11 @@ body {
   border: none;
   cursor: pointer; }
 
+.btn__basic {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 4rem; }
+
 .signup__btn--transparent {
   text-decoration: none;
   display: block;
@@ -83,6 +88,7 @@ body {
 .tweet {
   display: flex;
   border-top: 1px solid #14171a;
+  padding: 1rem;
   border-bottom: 1px solid #14171a; }
   .tweet__user-logo {
     border-radius: 50%;
@@ -112,6 +118,31 @@ body {
     .tweet__actions .action__icon {
       width: 2rem;
       height: auto; }
+
+.tweet__container {
+  display: flex;
+  padding: 1rem; }
+  .tweet__container .tweet__options {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    position: relative; }
+    .tweet__container .tweet__options--items {
+      margin-right: 1.5rem; }
+      .tweet__container .tweet__options--items:last-child {
+        position: absolute;
+        right: 0; }
+  .tweet__container #tweetArea {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: inherit;
+    resize: none;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    overflow-y: auto; }
 
 .header {
   display: grid;
@@ -253,21 +284,7 @@ body {
   .layout .explorar {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 1.5rem; }
-  .layout .tweet__creater {
-    display: flex; }
-  .layout .tweet__options {
-    display: flex; }
-  .layout #tweetArea {
-    font-size: 1.8rem;
-    font-weight: 500;
-    font-family: inherit;
-    resize: none;
-    padding: 1rem;
-    border: none;
-    outline: none;
-    overflow-y: auto;
-    border: 1px solid orangered; }
+    padding: 1rem; }
 
 .header__login {
   margin: 0 auto;
@@ -311,17 +328,21 @@ body {
   .header__signup .signup__page--logo {
     filter: brightness(0) saturate(100%) invert(45%) sepia(51%) saturate(778%) hue-rotate(157deg) brightness(94%) contrast(96%); }
   .header__signup--logo {
-    width: 4rem;
-    height: 4rem; }
+    width: 3.5rem;
+    height: 3.5rem; }
   .header__signup--form input {
     display: block;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     border-radius: .5rem;
     border: none;
     outline: 2px solid rgba(128, 128, 128, 0.555);
-    padding: 1.5rem 1rem;
+    padding: 1.3rem 1rem;
     margin-bottom: 2rem;
     width: 100%;
     transition: all .5rem; }
     .header__signup--form input:focus {
       outline: 2px solid #1A8CD8; }
+  .header__signup #have__ac {
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 1rem; }
