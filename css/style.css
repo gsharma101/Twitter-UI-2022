@@ -97,7 +97,7 @@ body {
     margin-right: 1rem; }
   .tweet__header {
     display: flex;
-    border: 1px solid blue; }
+    position: relative; }
   .tweet__person--name {
     font-size: 1.5rem;
     font-weight: 700;
@@ -112,6 +112,10 @@ body {
     color: #5b7083; }
   .tweet__content {
     font-size: 1.5rem; }
+  .tweet__menu {
+    position: absolute;
+    top: 0;
+    right: 2rem; }
   .tweet__actions {
     display: flex;
     justify-content: space-around; }
@@ -234,10 +238,23 @@ body {
   grid-template-columns: 1.3fr 2fr 1.3fr;
   font-size: 1.5rem;
   margin: 0 auto;
-  max-width: 120rem;
-  border: 1px solid red; }
+  max-width: 120rem; }
   .layout__left--sidebar {
     position: fixed; }
+    .layout__left--sidebar-container {
+      position: relative; }
+      .layout__left--sidebar-container .left__sidebar--logout {
+        display: flex;
+        margin-left: 1rem;
+        position: fixed;
+        bottom: 1rem;
+        left: .5;
+        padding: 1rem;
+        border-radius: 4rem;
+        transition: .5s; }
+        .layout__left--sidebar-container .left__sidebar--logout:hover {
+          background-color: #3c404330;
+          cursor: pointer; }
     .layout__left--sidebar .brand {
       filter: brightness(0) saturate(100%) invert(45%) sepia(51%) saturate(778%) hue-rotate(157deg) brightness(94%) contrast(96%);
       width: 4rem;
@@ -248,14 +265,13 @@ body {
       .layout__left--sidebar .brand__box:hover {
         background-color: #1A8CD8; }
     .layout__left--sidebar .left__sidebar--box {
-      border: 1px solid blue;
       padding: 1rem; }
       .layout__left--sidebar .left__sidebar--box .left__sidebar--menu {
         list-style: none; }
         .layout__left--sidebar .left__sidebar--box .left__sidebar--menu-items {
           margin-bottom: 1.5rem;
           font-size: 2rem;
-          font-weight: 700; }
+          font-weight: 500; }
         .layout__left--sidebar .left__sidebar--box .left__sidebar--menu-links {
           text-decoration: none;
           text-transform: capitalize; }

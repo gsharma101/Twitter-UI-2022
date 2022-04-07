@@ -4,9 +4,25 @@
     font-size: 1.5rem;
     margin: 0 auto;
     max-width: 120rem;
-    border: 1px solid red;
     &__left--sidebar{
         position: fixed;
+        &-container{
+            position: relative;
+            .left__sidebar--logout{
+                display: flex;
+                margin-left: 1rem;
+                position: fixed;
+                bottom: 1rem;
+                left: .5;
+                padding: 1rem;
+                border-radius: 4rem;
+                transition: .5s;
+                &:hover{
+                    background-color: #3c404330;
+                    cursor: pointer;
+                }
+            }
+        }
         .brand{
             @include default-color;
             width: 4rem;
@@ -20,14 +36,13 @@
             }
         }
         .left__sidebar--box{
-            border: 1px solid blue;
             padding: 1rem;
             .left__sidebar--menu{
                 list-style: none;
                 &-items{
                     margin-bottom: 1.5rem;
                     font-size: 2rem;
-                    font-weight: 700;
+                    font-weight: 500;
                 }
                 &-links{
                     text-decoration: none;

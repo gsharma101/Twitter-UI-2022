@@ -11,7 +11,7 @@
     }
     &__header{
         display: flex;
-        border: 1px solid blue;
+        position: relative;
     }
     &__person--name{
         font-size: 1.5rem;
@@ -33,7 +33,9 @@
     }
 
     &__menu{
-
+        position: absolute;
+        top: 0;
+        right: 2rem;
     }
     // ? Tweet Actions
     &__actions{
