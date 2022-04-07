@@ -1,0 +1,34 @@
+.tweet__container{
+    display: flex;
+    padding: 1rem;
+    .tweet__creater{
+        
+    }
+    .tweet__options{
+        display: flex;
+        align-items:center;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position: relative;
+        &--items{
+            margin-right: 1.5rem;
+            &:last-child{
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+    
+    #tweetArea{
+        font-size: 1.8rem;
+        font-weight: 500;
+        font-family: inherit;
+        resize: none;
+        padding: 1rem;
+        border: none;
+        outline: none;
+        overflow-y: auto;
+    }
+
+}
