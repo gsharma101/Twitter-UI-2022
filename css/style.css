@@ -247,11 +247,16 @@ body {
         display: flex;
         margin-left: 1rem;
         position: fixed;
+        width: 25rem;
         bottom: 1rem;
         left: .5;
         padding: 1rem;
         border-radius: 4rem;
         transition: .5s; }
+        .layout__left--sidebar-container .left__sidebar--logout .logout__menu {
+          align-self: center;
+          position: absolute;
+          right: 1rem; }
         .layout__left--sidebar-container .left__sidebar--logout:hover {
           background-color: #3c404330;
           cursor: pointer; }
@@ -297,6 +302,15 @@ body {
     border-right: 1px solid red; }
   .layout__right--sidebar {
     position: fixed; }
+    .layout__right--sidebar-container {
+      border: 1px solid blue; }
+    .layout__right--sidebar .search__box {
+      border: 1px solid blue; }
+      .layout__right--sidebar .search__box #search {
+        padding: 1rem;
+        border: 1px solid #3C4043;
+        border-radius: 4rem;
+        width: 100%; }
   .layout .explorar {
     display: flex;
     justify-content: space-between;
