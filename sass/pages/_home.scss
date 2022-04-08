@@ -12,11 +12,17 @@
                 display: flex;
                 margin-left: 1rem;
                 position: fixed;
+                width: 25rem;
                 bottom: 1rem;
                 left: .5;
                 padding: 1rem;
                 border-radius: 4rem;
                 transition: .5s;
+                .logout__menu{
+                    align-self: center;
+                    position: absolute;
+                    right: 1rem;
+                }
                 &:hover{
                     background-color: #3c404330;
                     cursor: pointer;
@@ -78,8 +84,22 @@
         border-left: 1px solid red;
         border-right: 1px solid red;
     }
+
     &__right--sidebar{
+        &-container{
+            border: 1px solid blue;
+        }
         position: fixed;
+
+        .search__box{
+            border: 1px solid blue;
+            #search{
+                padding: 1rem;
+                border: 1px solid $color-grey;
+                border-radius: 4rem;
+                width: 100%;
+            }
+        }
     }
 
     .explorar{
