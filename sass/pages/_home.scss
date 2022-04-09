@@ -5,9 +5,12 @@
     margin: 0 auto;
     max-width: 120rem;
     &__left--sidebar{
+        border: 1px solid blue;
+        width: 100%;
         position: fixed;
         &-container{
             position: relative;
+            border: 1px solid ;
             .left__sidebar--logout{
                 display: flex;
                 margin-left: 1rem;
@@ -43,6 +46,7 @@
         }
         .left__sidebar--box{
             padding: 1rem;
+            margin-top: 1rem;
             .left__sidebar--menu{
                 list-style: none;
                 &-items{
@@ -81,18 +85,20 @@
         }
     }
     &__main--sidebar{
-        border-left: 1px solid red;
-        border-right: 1px solid red;
+        border-left: 1px solid $color-grey;
+        border-right: 1px solid $color-grey;
+    }
+
+    &__right--sidebar-container{
+        border: 1px solid red;
     }
 
     &__right--sidebar{
-        &-container{
-            border: 1px solid blue;
-        }
         position: fixed;
-
+        width: 100%;
+        border: 2px solid blue;
         .search__box{
-            border: 1px solid blue;
+            display: block;
             #search{
                 padding: 1rem;
                 border: 1px solid $color-grey;
