@@ -4,13 +4,12 @@
     font-size: 1.5rem;
     margin: 0 auto;
     max-width: 120rem;
+    border: 1px solid blue;
     &__left--sidebar{
-        border: 1px solid blue;
-        width: 100%;
+        max-width: 100%;
         position: fixed;
         &-container{
             position: relative;
-            border: 1px solid ;
             .left__sidebar--logout{
                 display: flex;
                 margin-left: 1rem;
@@ -50,7 +49,7 @@
             .left__sidebar--menu{
                 list-style: none;
                 &-items{
-                    margin-bottom: 1.5rem;
+                    margin-bottom: 1rem;
                     font-size: 2rem;
                     font-weight: 500;
                 }
@@ -95,8 +94,6 @@
 
     &__right--sidebar{
         position: fixed;
-        width: 100%;
-        border: 2px solid blue;
         .search__box{
             display: block;
             #search{
