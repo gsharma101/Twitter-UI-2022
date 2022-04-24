@@ -235,7 +235,7 @@ body {
 
 .layout {
   display: grid;
-  grid-template-columns: 1.3fr 2fr 1.8fr;
+  grid-template-columns: 1.3fr 2fr 1.5fr;
   font-size: 1.5rem;
   margin: 0 auto;
   max-width: 120rem; }
